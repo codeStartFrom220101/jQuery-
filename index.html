@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/Reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="CSS/lightboxCSS/lightbox.min.css">
     <link rel="icon" href="/favicon.ico">
     <script src="JS/jQuery/jquery2.2.3.min.js"></script>
 </head>
@@ -45,10 +46,10 @@
                     <li>
                         <a href="#">產品介紹</a>
                         <ul class="dropdownMenu">
-                            <li><a href="#">下拉式1</a></li>
-                            <li><a href="#">下拉式2</a></li>
-                            <li><a href="#">下拉式3</a></li>
-                            <li><a href="#">下拉式4</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">RWD</a></li>
                         </ul>
                     </li>
                     <li><a href="#">聯絡我們</a></li>
@@ -64,8 +65,7 @@
                             <img src="../IMG/HTML作業圖檔/最終作業_images/banner.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="IMG/HTML作業圖檔/多頁式作業＿images/bg_course.png"
-                                alt="">
+                            <img src="IMG/HTML作業圖檔/多頁式作業＿images/bg_course.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <img src="IMG/HTML作業圖檔/多頁式作業＿images/bg_index.png" alt="">
@@ -88,18 +88,24 @@
             <section>
                 <ul class="course">
                     <li>
-                        <div class="pic"><img src="IMG/HTML作業圖檔/最終作業_images/html.png" alt="HTML圖片"></div>
+                        <div class="pic"><a class="example-image-link" href="IMG/HTML作業圖檔/最終作業_images/html.png"
+                                data-lightbox="example-1"><img class="example-image"
+                                    src="IMG/HTML作業圖檔/最終作業_images/html.png" alt="HTML圖片" /></a></div>
                         <h6>Html 5 基礎教學</h6>
                         <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
                     </li>
                     <li>
-                        <div class="pic"><img src="IMG/HTML作業圖檔/最終作業_images/rwd.png" alt="RWD圖片"></div>
+                        <div class="pic"><a class="example-image-link" href="IMG/HTML作業圖檔/最終作業_images/rwd.png"
+                                data-lightbox="example-2"><img class="example-image"
+                                    src="IMG/HTML作業圖檔/最終作業_images/rwd.png" alt="RWD圖片" /></a></div>
                         <h6>響應式網站設計</h6>
                         <p>響 應 式 網 站 設 計 (Responsive web
                             design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
                     </li>
                     <li>
-                        <div class="pic"><img src="IMG/HTML作業圖檔/最終作業_images/jQuery.png" alt="jQuery圖片"></div>
+                        <div class="pic"><a class="example-image-link" href="IMG/HTML作業圖檔/最終作業_images/jQuery.png"
+                                data-lightbox="example-3"><img class="example-image"
+                                    src="IMG/HTML作業圖檔/最終作業_images/jQuery.png" alt="jQuery圖片" /></a></div>
                         <h6>jQuery實戰教學</h6>
                         <p>本課程有以下特色</p>
                         <ul>
@@ -188,6 +194,7 @@
         </footer>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/lightboxJS/lightbox-plus-jquery.min.js"></script>
     <script src="js/all.js"></script>
 </body>
 

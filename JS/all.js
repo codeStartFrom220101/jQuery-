@@ -15,4 +15,11 @@ $(document).ready(function () {
 
         // Navigation arrows
     })
+    //燈箱
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'positionFromTop': 400,
+    })
+
 });
