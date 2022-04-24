@@ -52,20 +52,47 @@
 
 .menu {
     display: flex;
-    width: 250px;
+    width: 300px;
     justify-content: space-around;
+    color: #00cc99;
+    font-weight: bold;
 }
 
 .menu a {
     text-decoration: none;
-    padding: 0.75em 0.5em;
+    padding: 0.97em 1em;
     color: #00cc99;
     font-weight: bold;
-
+    display: block;
 }
 
-.menu a:hover {
+.menu>li>a:hover {
     border-bottom: 3px solid #00cc99;
+}
+
+.menu ul {
+    display: none;
+}
+
+.menu>li {
+    position: relative;
+}
+.menu>li:hover .dropdownMenu {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+}
+.dropdownMenu li{
+    text-align: center;
+    background: white;
+}
+.dropdownMenu a{
+    padding: 0.75em 1.2em;
+    display: block;
+}
+.dropdownMenu a:hover{
+    background: #00cc99;
+    color: white;
 }
 
 .banner {
