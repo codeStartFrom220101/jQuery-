@@ -21,5 +21,12 @@ $(document).ready(function () {
         'wrapAround': true,
         'positionFromTop': 400,
     })
+    //移動到頁面頂部滑動效果
+    $('.top').click(function (e) { 
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
 
 });
