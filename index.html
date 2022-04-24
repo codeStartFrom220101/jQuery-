@@ -18,6 +18,7 @@
     <meta name="author" content="me">
     <link rel="stylesheet" href="css/Reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="icon" href="/favicon.ico">
     <script src="JS/jQuery/jquery2.2.3.min.js"></script>
 </head>
@@ -46,8 +47,30 @@
                 </ul>
             </div>
             <div class="banner">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="../IMG/HTML作業圖檔/最終作業_images/banner.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/HTML作業圖檔/多頁式作業＿images/bg_course.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/HTML作業圖檔/多頁式作業＿images/bg_index.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="IMG/HTML作業圖檔/多頁式作業＿images/bg_QA.png" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                </div>
                 <h3>
-                    <div class="h3bg"></div>
                     六角學院<br>
                     讓您奠定良好的前端基礎
                 </h3>
@@ -156,6 +179,8 @@
             </ul>
         </footer>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>

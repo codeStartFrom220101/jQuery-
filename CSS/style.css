@@ -26,11 +26,12 @@
 }
 
 /* color="#cccccc" */
-.facebook a{
+.facebook a {
     border-right: 2px solid #cccccc;
     color: #4460a0;
 }
-.twitter a{
+
+.twitter a {
     color: #00aaec;
 }
 
@@ -68,19 +69,34 @@
 }
 
 .banner {
-    background-image: url(../IMG/HTML作業圖檔/最終作業_images/banner.png);
+    position: relative;
     width: 100%;
     height: 346px;
-    display: flex;
-    align-items: center;
+}
+
+/* 輪播CSS */
+.swiper-container {
+    position: absolute;
+    z-index: -9999;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 346px;
+    position: absolute;
+    z-index: -9999;
 }
 
 .banner h3 {
+    position: absolute;
+    width: 942px;
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
-    width: 100%;
     font-size: 36px;
     padding: 30px;
+    top: 110px;
 }
 
 section {
@@ -93,7 +109,8 @@ section {
     display: flex;
     justify-content: space-around;
 }
-.course>li{
+
+.course>li {
     width: 31%;
     display: flex;
     flex-direction: column;
@@ -234,23 +251,26 @@ input[type=submit]:hover {
     background: #37523d;
 }
 
-footer{
+footer {
     display: flex;
-	justify-content: space-between;
-	padding: 25px 20px 50px 20px;
+    justify-content: space-between;
+    padding: 25px 20px 50px 20px;
 }
-footer a{
-	width: 171px;
-	height: 36px;
-	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
-	white-space: nowrap;
-	overflow: hidden;
-	text-indent: 101%;
+
+footer a {
+    width: 171px;
+    height: 36px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 101%;
 }
-footer li{
-	line-height: 1.5;
-	font-size: 15px;
+
+footer li {
+    line-height: 1.5;
+    font-size: 15px;
 }
-footer span{
-	color: gray;
+
+footer span {
+    color: gray;
 }
