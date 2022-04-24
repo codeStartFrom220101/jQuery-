@@ -1,0 +1,256 @@
+.wrap {
+    margin: 0 auto;
+    width: 1002px;
+    font-family: Microsoft JhengHei;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row-reverse;
+    background: #f6f6f6;
+    padding: 3px;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+}
+
+.share img {
+    padding-right: 3px;
+}
+
+.share a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* color="#cccccc" */
+.facebook a{
+    border-right: 2px solid #cccccc;
+    color: #4460a0;
+}
+.twitter a{
+    color: #00aaec;
+}
+
+.logoAndMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(../IMG/HTML作業圖檔/最終作業_images/logo.png);
+    height: 50px;
+    width: 224px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0.75em 0.5em;
+    color: #00cc99;
+    font-weight: bold;
+
+}
+
+.menu a:hover {
+    border-bottom: 3px solid #00cc99;
+}
+
+.banner {
+    background-image: url(../IMG/HTML作業圖檔/最終作業_images/banner.png);
+    width: 100%;
+    height: 346px;
+    display: flex;
+    align-items: center;
+}
+
+.banner h3 {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    font-size: 36px;
+    padding: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.course {
+    display: flex;
+    justify-content: space-around;
+}
+.course>li{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 3px #dcdcdc;
+    border-radius: 3px;
+    padding: 20px 0;
+}
+
+.pic {
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course h6,
+.course p,
+.course ul {
+    width: 90%;
+}
+
+.course h6 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.course p,
+.course li {
+    line-height: 1.5;
+    text-align: justify
+}
+
+.comparetitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.compare {
+    margin: 0 auto 50px;
+}
+
+.compare th,
+.compare td {
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    width: 195px;
+    font-size: 15px;
+}
+
+.compare th {
+    background: #f7f7f7;
+    color: black;
+    text-align-last: left;
+    font-weight: bolder;
+}
+
+.compare th,
+.compare td {
+    padding: 10px;
+}
+
+.ponitcolor {
+    color: gray;
+}
+
+form {
+    color: white;
+    background-image: url(../IMG/HTML作業圖檔/最終作業_images/form-bg.png);
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h4 {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.formContent {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formContent textarea {
+    resize: none;
+    border-radius: 5px;
+    width: 47.5%;
+}
+
+.information {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.NPMContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.NPMContent label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.NPMContent input[type="text"],
+.NPMContent input[type="tel"],
+.NPMContent input[type="email"] {
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.information input[type="submit"] {
+    width: 70px;
+    height: 30px;
+    background: #00cc98;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background: #37523d;
+}
+
+footer{
+    display: flex;
+	justify-content: space-between;
+	padding: 25px 20px 50px 20px;
+}
+footer a{
+	width: 171px;
+	height: 36px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: 101%;
+}
+footer li{
+	line-height: 1.5;
+	font-size: 15px;
+}
+footer span{
+	color: gray;
+}
