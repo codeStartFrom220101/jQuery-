@@ -28,5 +28,11 @@ $(document).ready(function () {
             scrollTop: 0
         }, 700);
     });
+    $(".dropdownMenu a").click(function (e) { 
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(".course").offset().top
+        }, 700);
+    });
 
 });
