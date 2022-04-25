@@ -17,12 +17,12 @@
 }
 
 .share img {
-    padding-right: 3px;
+    margin-right: 3px;
 }
 
 .share a {
     text-decoration: none;
-    padding: 5px;
+    padding: 0 5px;
 }
 
 /* color="#cccccc" */
