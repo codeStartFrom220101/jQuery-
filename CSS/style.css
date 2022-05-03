@@ -4,16 +4,12 @@
     font-family: Microsoft JhengHei;
 }
 
-.topbar {
-    display: flex;
-    flex-direction: row-reverse;
-    background: #f6f6f6;
-    padding: 3px;
-}
-
 .share {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    background: #f6f6f6;
+    padding: 3px;
 }
 
 .share img {
@@ -64,21 +60,24 @@
     color: #00cc99;
     font-weight: bold;
     display: block;
+    border-bottom: 3px solid transparent;
 }
 
 .menu>li>a:hover {
     border-bottom: 3px solid #00cc99;
 }
 
+.menu>li {
+    position: relative;
+}
+
 .menu ul {
     display: none;
 }
 
-.menu>li {
-    position: relative;
-}
-.menu>li:hover .dropdownMenu {
-    display: block;
+.dropdownMenu {
+    /* display: block; */
+    width: 100%;
     position: absolute;
     z-index: 1000;
 }
@@ -103,8 +102,6 @@
 
 /* 輪播CSS */
 .swiper-container {
-    position: absolute;
-    z-index: -9999;
     height: 100%;
     width: 100%;
 }
@@ -112,12 +109,11 @@
 .swiper-slide img {
     width: 100%;
     height: 346px;
-    position: absolute;
-    z-index: -9999;
 }
 
-.banner h3 {
+.banner h2 {
     position: absolute;
+    z-index: 10;
     width: 942px;
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
@@ -127,8 +123,6 @@
 }
 
 section {
-    display: flex;
-    justify-content: space-around;
     margin: 30px 0;
 }
 
@@ -139,9 +133,6 @@ section {
 
 .course>li {
     width: 31%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     box-shadow: 0px 3px 3px #dcdcdc;
     border-radius: 3px;
     padding: 20px 0;
@@ -154,13 +145,14 @@ section {
     justify-content: center;
 }
 
-.course h6,
+.course h3,
 .course p,
 .course ul {
     width: 90%;
+    margin: 0 auto;
 }
 
-.course h6 {
+.course h3 {
     margin: 20px 0;
     text-align: center;
     font-size: 18px;
@@ -171,6 +163,22 @@ section {
 .course li {
     line-height: 1.5;
     text-align: justify
+}
+
+.lb-cancel {
+    background: url(../IMG/lightboxIMG/loading.gif) no-repeat;
+}
+
+.lb-nav a.lb-prev {
+    background: url(../IMG/lightboxIMG/prev.png) left 48% no-repeat;
+}
+
+.lb-nav a.lb-next {
+    background: url(../IMG/lightboxIMG/next.png) right 48% no-repeat;
+}
+
+.lb-data .lb-close {
+    background: url(../IMG/lightboxIMG/close.png) top right no-repeat;
 }
 
 .comparetitle {
@@ -208,7 +216,7 @@ section {
     color: gray;
 }
 
-form {
+.form-bg{
     color: white;
     background-image: url(../IMG/HTML作業圖檔/最終作業_images/form-bg.png);
     height: 405px;
@@ -217,7 +225,7 @@ form {
     align-items: center;
 }
 
-form h4 {
+.form-bg h4 {
     font-weight: bold;
     font-size: 24px;
     padding: 30px;
@@ -298,7 +306,8 @@ footer li {
     font-size: 15px;
 }
 
-footer span {
+footer a {
+    text-decoration: none;
     color: gray;
 }
 

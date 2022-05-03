@@ -22,17 +22,30 @@ $(document).ready(function () {
         'positionFromTop': 400,
     })
     //移動到頁面頂部滑動效果
-    $('.top').click(function (e) { 
+    $('.top').click(function (e) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
         }, 700);
     });
-    $(".dropdownMenu a").click(function (e) { 
+    $(".dropdownMenu a").click(function (e) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: $(".course").offset().top
         }, 700);
     });
-
+    //特定高度才顯示top標籤淡入淡出
+    function showBtnCondition() {
+        if ($(this).scrollTop() > 500) {
+            $('.top').fadeIn();
+        } else {
+            $('.top').fadeOut();
+        }
+    }
+    $(window).scroll(showBtnCondition);
+    //下拉式選單點擊
+    $(".dropdown").click(function (e) {
+        e.preventDefault();
+        $(".dropdownMenu").slideToggle();
+    });
 });
