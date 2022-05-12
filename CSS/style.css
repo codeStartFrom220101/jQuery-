@@ -65,7 +65,7 @@
     background: white;
 }
 
-.menu a:hover {
+.menu a:hover, .menu a.active {
     border-bottom: 3px solid #00cc99;
 }
 

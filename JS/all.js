@@ -38,6 +38,7 @@ $(document).ready(function () {
     //下拉式選單點擊
     $(".dropdown").click(function (e) {
         e.preventDefault();
+        $(".dropdown").toggleClass("active");
         $(".dropdownMenu").slideToggle();
     });
 });
