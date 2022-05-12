@@ -28,24 +28,25 @@ $(document).ready(function () {
             scrollTop: 0
         }, 700);
     });
+    //點擊下拉式選單後自動滑動至course
     $(".dropdownMenu a").click(function (e) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: $(".course").offset().top
         }, 700);
     });
-    //特定高度才顯示top標籤淡入淡出
-    function showBtnCondition() {
-        if ($(this).scrollTop() > 500) {
-            $('.top').fadeIn();
-        } else {
-            $('.top').fadeOut();
-        }
-    }
-    $(window).scroll(showBtnCondition);
     //下拉式選單點擊
     $(".dropdown").click(function (e) {
         e.preventDefault();
         $(".dropdownMenu").slideToggle();
     });
 });
+//特定高度才顯示top標籤淡入淡出
+function showBtnCondition() {
+    if ($(this).scrollTop() > 500) {
+        $('.top').fadeIn();
+    } else {
+        $('.top').fadeOut();
+    }
+}
+$(window).scroll(showBtnCondition);

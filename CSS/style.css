@@ -55,15 +55,17 @@
 }
 
 .menu a {
+    text-align: center;
     text-decoration: none;
     padding: 0.97em 1em;
     color: #00cc99;
     font-weight: bold;
     display: block;
     border-bottom: 3px solid transparent;
+    background: white;
 }
 
-.menu>li>a:hover {
+.menu a:hover {
     border-bottom: 3px solid #00cc99;
 }
 
@@ -73,25 +75,9 @@
 
 .menu ul {
     display: none;
-}
-
-.dropdownMenu {
-    /* display: block; */
     width: 100%;
     position: absolute;
     z-index: 1000;
-}
-.dropdownMenu li{
-    text-align: center;
-    background: white;
-}
-.dropdownMenu a{
-    padding: 0.75em 1.2em;
-    display: block;
-}
-.dropdownMenu a:hover{
-    background: #00cc99;
-    color: white;
 }
 
 .banner {
@@ -165,6 +151,11 @@ section {
     text-align: justify
 }
 
+.course ul{
+    list-style: disc;
+    padding-left: 3em;
+}
+
 .lb-cancel {
     background: url(../IMG/lightboxIMG/loading.gif) no-repeat;
 }
@@ -225,7 +216,7 @@ section {
     align-items: center;
 }
 
-.form-bg h4 {
+.form-bg h2 {
     font-weight: bold;
     font-size: 24px;
     padding: 30px;
